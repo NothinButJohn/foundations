@@ -1,0 +1,34 @@
+
+
+
+.mat-card-container{
+  max-width: 300px;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  .mat-card-content-container{
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    .square-container{
+      grid-area: 1/1/8/7;
+      .square{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .nextImage-button{
+      grid-area: 4/6/4/7;
+    }
+
+    .prevImage-button{
+      grid-area: 4/1/4/2;
+    }
+  }
+
+}
+

@@ -1,0 +1,122 @@
+// mobile
+// iPhone XS  375x812, iPhone XR 414x896
+@media (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
+  .member-mobile-navigation-container{
+    .mat-toolbar-container{
+
+      .navigation-buttons-container{
+
+      }
+    }
+  }
+  .member-tablet-navigation-container{
+    display: none;
+  }
+  .member-pc-navigation-container{
+    display: none;
+  }
+}
+// landscape...
+@media (min-width: 600px) and (max-width: 999px) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+    display: none;
+  }
+  .member-pc-navigation-container{
+    display: none;
+  }
+}
+
+// tablets...
+// iPadPro 2388x1668
+// old ipad 9.7 1024x768, ipad pro 10.5 1112x834, minis around 1020..
+@media (min-width: 700px) and (max-width: 900px) and(orientation: portrait) and (aspect-ratio: 4/3) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+
+  }
+  .member-pc-navigation-container{
+    display: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) and (aspect-ratio: 4/3) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+
+  }
+  .member-pc-navigation-container{
+    display: none;
+  }
+}
+
+// Strictly for 12" iPad Pro layouts...
+@media (min-width: 1000px) and (orientation: portrait) and (aspect-ratio: 10/7) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+
+  }
+  .member-pc-navigation-container{
+    display: none;
+  }
+}@media (min-width: 1300px) and (orientation: landscape) and (aspect-ratio: 10/7) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+
+  }
+  .member-pc-navigation-container{
+    display: none;
+  }
+}
+
+
+
+// PCs
+// small pc
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+    display: none;
+  }
+  .member-pc-navigation-container{
+    .navigation-buttons-container{}
+  }
+}
+// normal pc
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+    display: none;
+  }
+  .member-pc-navigation-container{
+    .navigation-buttons-container{}
+  }
+}
+// proper pc
+@media (min-width: 1400px) {
+  .member-mobile-navigation-container{
+    display: none;
+  }
+  .member-tablet-navigation-container{
+    display: none;
+  }
+  .member-pc-navigation-container{
+    .navigation-buttons-container{}
+  }
+}
+
+
+

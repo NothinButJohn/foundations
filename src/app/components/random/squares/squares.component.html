@@ -1,0 +1,24 @@
+<div class="root">
+  <div class="mat-card-container">
+    <mat-card >
+      <mat-card-content>
+        <div *ngIf="square$| async as square" class="mat-card-content-container">
+          <div class="square-container">
+            <img class="square" src="{{square.pictureSource}}">
+          </div>
+
+          <button mat-icon-button class="nextImage-button" (click)="nextSquare(square.index)">
+            <mat-icon>arrow_forward_ios</mat-icon>
+          </button>
+          <button mat-icon-button class="prevImage-button" (click)="prevSquare(square.index)">
+            <mat-icon>arrow_back_ios_new</mat-icon>
+          </button>
+        </div>
+        <div>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>

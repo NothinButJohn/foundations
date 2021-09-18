@@ -1,0 +1,20 @@
+
+
+
+
+<div class="member-home-container">
+
+  <div *ngIf="valentinoImage$ | async as media" class="member-home-feed">
+      <ng-container *ngFor="let image of media" >
+        <div  class="media-container" *ngIf="image.includes('.jpg') || media.includes('.png') || media.includes('.webp')" >
+          <img class="media" src="{{image}}">
+        </div>
+      </ng-container>
+
+  </div>
+
+  <div class="member-navigation-container">
+    <app-members-navigation></app-members-navigation>
+  </div>
+
+</div>
