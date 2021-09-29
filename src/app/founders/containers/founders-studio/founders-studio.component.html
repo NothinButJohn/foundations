@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+<div class="founders-studio-container">
+
+  <mat-sidenav-container class="studio-sidenav-container" >
+    <mat-sidenav mode="over" #sidenav (positionChanged)="sidenavStateChange()" class="studio-sidenav">
+      <div class="sidenav-drawer">
+        <div class="sidenav-close-button">
+          <button mat-icon-button (click)="sidenav.toggle()" class="sidenav-button-icon">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+
+
+        <div class="studio-sidenav-drawer-buttons-container">
+          <div class="drawer-button-container">
+            <button mat-stroked-button class="sidenav-button-icon">
+              <mat-icon class="sidenav-mat-icon">perm_media</mat-icon>
+              <span class="sidenav-text">all media</span>
+            </button>
+          </div>
+
+          <div class="drawer-button-container">
+            <button mat-stroked-button class="sidenav-button-icon">
+              <mat-icon class="sidenav-mat-icon">collections</mat-icon>
+              <span class="sidenav-text">albums</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </mat-sidenav>
+
+    <mat-sidenav-content class="studio-sidenav-content">
+      <div class="studio-topBar-container" *ngIf="sidenavClosed | async;">
+        <div class="studio-menuButton-container">
+          <button mat-icon-button (click)="sidenav.toggle()" class="sidenav-button-icon">
+            <mat-icon class="sidenav-button-icon">menu</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+  <div class="founders-bottom-nav-container">
+    <app-founder-nav></app-founder-nav>
+  </div>
+</div>
+
+
+

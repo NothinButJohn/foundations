@@ -3,7 +3,9 @@
 @media (min-width: 0px) and (max-width: 600px) and (orientation: portrait) {
   .member-mobile-navigation-container{
     .mat-toolbar-container{
-
+      .mat-toolbar{
+        min-height: 60px;
+      }
       .navigation-buttons-container{
 
       }

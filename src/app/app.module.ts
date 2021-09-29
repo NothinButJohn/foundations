@@ -7,18 +7,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from "./material/material.module";
 import {MembersModule} from "./members/members.module";
 import {SquaresComponent} from "./components/random/squares/squares.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {LandingComponent, SignInComponent} from './components/landing/landing.component';
+import {FoundersModule} from "./founders/founders.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    SquaresComponent
+    SquaresComponent,
+    LandingComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
     MaterialModule,
-    MembersModule
+    MembersModule,
+    FoundersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

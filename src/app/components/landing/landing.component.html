@@ -1,0 +1,21 @@
+
+
+
+<div class="landing-container">
+  <div class="night" *ngFor="let i of stars">
+    <div class="shooting_star"></div>
+  </div>
+  <div class="banner">
+    <img class="banner-image" src="assets/bannerImage.png">
+  </div>
+  <div *ngIf="darkTheme; else lightTheme" class="logo-dark-container">
+    <img class="logo-dark" src="assets/dark_logo.jpeg">
+  </div>
+  <ng-template #lightTheme>
+    <div class="logo-container">
+<!--      <img class="logo" src="assets/logo_white.jpeg">-->
+
+    </div>
+  </ng-template>
+  <button class="signin-button" mat-raised-button (click)="openDialog()">Sign In</button>
+</div>
