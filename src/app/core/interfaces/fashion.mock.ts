@@ -3,7 +3,7 @@
 // tops
 import {of} from "rxjs";
 
-export const tops = ['blouses', 'bodysuits', 'nightOut', 'statement', 'tanksCamisSleeveless', 'tshirt and shortSleeve', 'vneck']
+export const tops = ['blouses', 'bodysuits', 'nightOut', 'statement', 'tanksCamisSleeveless', 'tshirt and shortSleeve', 'vneck', 'dresses']
 // shirts, T, long, blouses, turtleneck, hoodies, crewnecks,
 
 
